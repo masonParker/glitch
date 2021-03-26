@@ -24,61 +24,101 @@
               alert(description1);
             }
     </script>
-    <title>Mason's CS Labs</title>
+    <style>
+      .button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 80px;
+        margin: 4px 2px;
+        cursor: pointer;
+        transition-duration: 0.4s;
+      }
 
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
+      .button2 {
+        transition-duration: 0.4s;
+        background-color: #008CBA;
+      } /* Blue */
+      .button3 {
+        transition-duration: 0.4s;
+        background-color: #f44336;
+      } /* Red */
+      .button4 {
+        transition-duration: 0.4s;
+        background-color: #e7e7e7;
+        color: black;
+      } /* Gray */
+      .button5 {
+        transition-duration: 0.4s;
+        background-color: #555555;
+      } /* Black */
 
-    <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
-    <style></style>
+      .button:hover {
+        background-color: #4CAF50; /* Green */
+        color: white;
+
+      a:link {
+        color: red;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      a:visited {
+        color: blue;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+
+      a:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+    </style>
+    <title>CS Main Page</title>
   </head>
-  <body class="bg-info container jumbotron">
-    <h1 class="text-center text-white">
-      <u>Mason's CS Labs</u>
-    </h1>
-    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-    <script src="https://button.glitch.me/button.js" defer></script>
+  <body class="bg-info">
+    <header>
+      <h1 class="text-center text-danger">
+        <u>Mason's CS Labs and Assignments</u>
+      </h1>
+    </header>
     <div class="container">
       <div class="row-sm">
         <div class="col-sm">
-          <h3 class="text-secondary text-center">
-            Magic Numbers Lab:
-          </h3>
-          <p class="text-danger fs-5 text-center">
-            In this lab we were given a set of code where I had to identify and
-            change magic numbers into the correct constants.
+          <h3 class="text-secondary text-center"></h3>
+          <p class="fs-5 text-center">
+            Welcome to my webpage! This spashpage will help direct you to all of
+            Mason's labs and assignments for each unit.
           </p>
-          <script src="https://gist.github.com/masonParker/d54f6a4f704030496289fc0c870a5801.js"></script>
+          <button class="button button4">
+            <a href="/Unit1">Unit 1</a>
+          </button>
         </div>
         <div class="col-sm">
-          <h3 class="text-secondary text-center">
-            Arrays and Strings Lab:
-          </h3>
-          <p class="text-danger fs-5 text-center">
-            For this lab we were tasked with creating a program where a user
-            would input the amount of hours of homework they did each day for
-            the past 5 days. After the user inputted their answers we had to get
-            the program to print out the appropriate hours for each day.
-          </p>
-          <script src="https://gist.github.com/masonParker/3aab9231d538e30e268a55f515eaf798.js"></script>
+          <h3 class="text-secondary text-center"></h3>
+          <p class="text-danger fs-5 text-center"></p>
+          <button class="button button4"><a href="/Unit2">Unit 2</a></button>
         </div>
         <div class="col-sm">
-          <h3 class="text-secondary text-center">
-            Functions Lab:
-          </h3>
-          <p class="text-danger fs-5 text-center">
-            In the functions lab I had to create a custom function that should
-            prompt the user to enter an input that should only allow a positive
-            integer otherwise it should prompt the user to retry.
-          </p>
-          <script src="https://gist.github.com/masonParker/4420ce33d938563a681f487bfca707fe.js"></script>
+          <h3 class="text-secondary text-center"></h3>
+          <p class="text-danger fs-5 text-center"></p>
+          <button class="button button4">
+            <a href="/Unit3">Unit 3</a>
+          </button>
         </div>
       </div>
     </div>
+    <script src="Index.js"></script>
   </body>
-  <p>
-    I'm your cool new webpage. Made with
-    <a href="https://glitch.com">Glitch</a>!
-  </p>
 </html>
