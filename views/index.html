@@ -25,6 +25,12 @@
             }
     </script>
     <style>
+      .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+      }
       .button {
         background-color: #4CAF50; /* Green */
         border: none;
@@ -84,6 +90,7 @@
         background-color: transparent;
         text-decoration: underline;
       }
+      
     </style>
     <title>CS Main Page</title>
   </head>
@@ -101,21 +108,31 @@
             Welcome to my webpage! This spashpage will help direct you to all of
             Mason's labs and assignments for each unit.
           </p>
-          <button class="button button4">
-            <a href="/Unit1">Unit 1</a>
+            <div class="center">
+              <button class="button button4">
+                <a href="/Unit1">Unit 1</a>
+              </button>
+            </div>
+        </div>
+        <div class="col-sm">
+          <h3 class="text-secondary text-center"></h3>
+          <p class="text-danger fs-5 text-center"></p>
+          <div class="center">
+            <button class="button button4">
+            <a href="/Unit2">Unit 2</a>
           </button>
+          </div>
+          
         </div>
         <div class="col-sm">
           <h3 class="text-secondary text-center"></h3>
           <p class="text-danger fs-5 text-center"></p>
-          <button class="button button4"><a href="/Unit2">Unit 2</a></button>
-        </div>
-        <div class="col-sm">
-          <h3 class="text-secondary text-center"></h3>
-          <p class="text-danger fs-5 text-center"></p>
-          <button class="button button4">
+          <div class="center">
+            <button class="button button4">
             <a href="/Unit3">Unit 3</a>
           </button>
+          </div>
+          
         </div>
       </div>
     </div>
