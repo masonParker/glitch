@@ -24,74 +24,7 @@
               alert(description1);
             }
     </script>
-    <style>
-      .center {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 200px;
-      }
-      .button {
-        background-color: #4CAF50; /* Green */
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 80px;
-        margin: 4px 2px;
-        cursor: pointer;
-        transition-duration: 0.4s;
-      }
-
-      .button2 {
-        transition-duration: 0.4s;
-        background-color: #008CBA;
-      } /* Blue */
-      .button3 {
-        transition-duration: 0.4s;
-        background-color: #f44336;
-      } /* Red */
-      .button4 {
-        transition-duration: 0.4s;
-        background-color: #e7e7e7;
-        color: black;
-      } /* Gray */
-      .button5 {
-        transition-duration: 0.4s;
-        background-color: #555555;
-      } /* Black */
-
-      .button:hover {
-        background-color: #4CAF50; /* Green */
-        color: white;
-
-      a:link {
-        color: red;
-        background-color: transparent;
-        text-decoration: none;
-      }
-
-      a:visited {
-        color: blue;
-        background-color: transparent;
-        text-decoration: none;
-      }
-
-      a:hover {
-        color: red;
-        background-color: transparent;
-        text-decoration: underline;
-      }
-
-      a:active {
-        color: yellow;
-        background-color: transparent;
-        text-decoration: underline;
-      }
-      
-    </style>
+    <style></style>
     <title>CS Main Page</title>
   </head>
   <body class="bg-info">
@@ -100,42 +33,28 @@
         <u>Mason's CS Labs and Assignments</u>
       </h1>
     </header>
-    <div class="container">
-      <div class="row-sm">
-        <div class="col-sm">
-          <h3 class="text-secondary text-center"></h3>
-          <p class="fs-5 text-center">
-            Welcome to my webpage! This spashpage will help direct you to all of
-            Mason's labs and assignments for each unit.
-          </p>
-            <div class="center">
-              <button class="button button4">
-                <a href="/Unit1">Unit 1</a>
-              </button>
-            </div>
-        </div>
-        <div class="col-sm">
-          <h3 class="text-secondary text-center"></h3>
-          <p class="text-danger fs-5 text-center"></p>
-          <div class="center">
-            <button class="button button4">
-            <a href="/Unit2">Unit 2</a>
+    <nav class="navbar fixed-top navbar-light bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">CS Units</a>
+        <form class="container-fluid justify-content-start">
+          <button class="btn btn-lg btn-outline-secondary" type="button">
+            <a href="/index" style="text-decoration: none;">Home</a>
           </button>
-          </div>
-          
-        </div>
-        <div class="col-sm">
-          <h3 class="text-secondary text-center"></h3>
-          <p class="text-danger fs-5 text-center"></p>
-          <div class="center">
-            <button class="button button4">
-            <a href="/Unit3">Unit 3</a>
+          <button class="btn  btn-lg btn-outline-success me-2" type="button">
+            <a href="/Unit1" style="text-decoration: none;">C Language</a>
           </button>
-          </div>
-          
-        </div>
+          <button class="btn  btn-lg btn-outline-success me-2" type="button">
+            <a href="/Unit2" style="text-decoration: none;">Unit 2</a>
+          </button>
+          <button class="btn btn-lg btn-outline-success me-2" type="button">
+            <a href="/Unit3" style="text-decoration: none;">Unit 3</a>
+          </button>
+          <button class="btn btn-lg btn-outline-success me-2" type="button">
+            <a href="/Unit4" style="text-decoration: none;">Unit 4</a>
+          </button>
+        </form>
       </div>
-    </div>
-    <script src="Index.js"></script>
+    </nav>
+    <script src="index.js"></script>
   </body>
 </html>

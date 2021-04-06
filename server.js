@@ -23,8 +23,9 @@ app.get("/", (request, response) => {
 });
 
 // send the default array of dreams to the webpage
-
-
+app.get("/index", (request, response) => {
+  response.sendFile(__dirname + "/views/index.html");
+});
 app.get("/Unit1", (request, response) => {
   response.sendFile(__dirname + "/views/Unit1.html");
 });
@@ -33,6 +34,9 @@ app.get("/Unit2", (request, response) => {
 });  
 app.get("/Unit3", (request, response) => {
   response.sendFile(__dirname + "/views/Unit3.html");
+});
+app.get("/Unit4", (request, response) => {
+  response.sendFile(__dirname + "/views/Unit4.html");
 });
 // listen for requests :)
 const listener = app.listen(process.env.PORT, () => {

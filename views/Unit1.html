@@ -27,58 +27,84 @@
     <title>C Labs and Assignments</title>
 
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
-
-    <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
-    <style></style>
   </head>
+  <nav class="navbar fixed-top navbar-light bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">CS Units</a>
+      <form class="container-fluid justify-content-start">
+        <button class="btn btn-lg btn-outline-secondary" type="button">
+          <a href="/index" style="text-decoration: none;">Home</a>
+        </button>
+        <button class="btn btn-outline-success me-2" type="button">
+          <a href="/Unit1" style="text-decoration: none;">C Language</a>
+        </button>
+        <button class="btn btn-outline-success me-2" type="button">
+          <a href="/Unit2" style="text-decoration: none;">Unit 2</a>
+        </button>
+      </form>
+    </div>
+  </nav>
+
   <body class="bg-info container jumbotron">
-    <h1 class="text-center text-white">
-      <u>Unit 1: C</u>
-    </h1>
-    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-    <script src="https://button.glitch.me/button.js" defer></script>
-    <div class="container">
-      <div class="row-sm">
-        <div class="col-sm">
-          <h3 class="text-secondary text-center">
-            Magic Numbers Lab:
-          </h3>
-          <p class="text-danger fs-5 text-center">
-            In this lab we were given a set of code where I had to identify and
-            change magic numbers into the correct constants.
-          </p>
-          <script src="https://gist.github.com/masonParker/d54f6a4f704030496289fc0c870a5801.js"></script>
-        </div>
-        <div class="col-sm">
-          <h3 class="text-secondary text-center">
-            Arrays and Strings Lab:
-          </h3>
-          <p class="text-danger fs-5 text-center">
-            For this lab we were tasked with creating a program where a user
-            would input the amount of hours of homework they did each day for
-            the past 5 days. After the user inputted their answers we had to get
-            the program to print out the appropriate hours for each day.
-          </p>
-          <script src="https://gist.github.com/masonParker/3aab9231d538e30e268a55f515eaf798.js"></script>
-        </div>
-        <div class="col-sm">
-          <h3 class="text-secondary text-center">
-            Functions Lab:
-          </h3>
-          <p class="text-danger fs-5 text-center">
-            In the functions lab I had to create a custom function that should
-            prompt the user to enter an input that should only allow a positive
-            integer otherwise it should prompt the user to retry.
-          </p>
-          <script src="https://gist.github.com/masonParker/4420ce33d938563a681f487bfca707fe.js"></script>
+    <div style="position:relative; top:100px;">
+      <h1 class="text-center text-white">
+        <u>Unit 1: C</u>
+      </h1>
+      <div
+        class="glitchButton"
+        style="position:fixed;top:20px;right:20px;"
+      ></div>
+      <script src="https://button.glitch.me/button.js" defer></script>
+      <div class="container">
+        <div class="row-sm">
+          <div class="col-sm">
+            <h3 class="text-secondary text-center">
+              Syntax Lab:
+            </h3>
+            <p class="text-danger fs-5 text-center">
+              In this lab we learned: What syntax is, when to use parentheses
+              and double quotes, why we use curly braces and semicolons, and the
+              syntax needed to create a program in C
+            </p>
+            <script src="https://gist.github.com/masonParker/436d1bf3a416bb67c9ded36163ce7bc6.js"></script>
+          </div>
+          <div class="col-sm">
+            <h3 class="text-secondary text-center">
+              Variables Lab:
+            </h3>
+            <p class="text-danger fs-5 text-center">
+              In this lab we learned about: The difference between variables in
+              Math and CS, creating and naming a variable, assigning a value to
+              a variable, and getting user input for a variable
+            </p>
+            <script src="https://gist.github.com/masonParker/516c6be62cb6463337c4852191ec7481.js"></script>
+          </div>
+          <div class="col-sm">
+            <h3 class="text-secondary text-center">
+              Data Types Lab:
+            </h3>
+            <p class="text-danger fs-5 text-center">
+              In this lab we learned about: The common data types we’ll use in
+              CS50, problems that can arise with ints and floats, and data input
+              functions for different data types
+            </p>
+            <script src="https://gist.github.com/masonParker/e15cf1f863b63a2b1583228c8c8d050d.js"></script>
+            <div class="col-sm">
+              <h3 class="text-secondary text-center">
+                Printf Placeholders Lab:
+              </h3>
+              <p class="text-danger fs-5 text-center">
+                In this lab we learned: Why we use placeholders, how to use a
+                placeholder to format a variable for printf, different
+                placeholders for different data types, using multiple
+                placeholders in one statement
+              </p>
+              <script src="https://gist.github.com/masonParker/e8748fef9c4840d0c2053984944c2c0c.js"></script>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <script src="index.js"></script>
   </body>
-  <p>
-    I'm your cool new webpage. Made with
-    <a href="https://glitch.com">Glitch</a>!
-  </p>
 </html>
