@@ -37,7 +37,7 @@ input {
 form button {
   background-color: #bbbbf2;
   border: 2px solid currentColor;
-  border-radius: .25em;
+  border-radius: 0.25em;
   cursor: pointer;
   font-size: inherit;
   line-height: 1.4em;
@@ -71,7 +71,6 @@ footer {
   position: relative;
 }
 
-
 /* speech bubble 5 */
 
 .sb5:before {
@@ -99,7 +98,6 @@ footer {
   right: -11px;
   top: 10px;
 }
-
 
 /* speech bubble 6 */
 
@@ -129,7 +127,6 @@ footer {
   top: 10px;
 }
 
-
 /* speech bubble 7 */
 
 .sb7:before {
@@ -158,7 +155,6 @@ footer {
   bottom: -13px;
 }
 
-
 /* speech bubble 8 */
 
 .sb8:before {
@@ -186,4 +182,9 @@ footer {
   right: 24px;
   bottom: -13px;
 }
-
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
