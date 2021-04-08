@@ -24,12 +24,13 @@
               alert(description1);
             }
     </script>
-    <style></style>
     <title>CS Main Page</title>
   </head>
   <body
-    style="background: rgb(2,0,36); background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);"
-    class="bg-info"
+    style="background: #56ab2f;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+"
   >
     <header>
       <h1 class="text-center text-danger">
@@ -55,11 +56,22 @@
           <button class="btn btn-lg btn-outline-success me-2" type="button">
             <a href="/Unit4" style="text-decoration: none;">Memory</a>
           </button>
+          <button class="btn btn-lg btn-outline-success me-2" type="button">
+            <a href="/Unit5" style="text-decoration: none;">Python</a>
+          </button>
+          <button class="btn btn-lg btn-outline-success me-2" type="button">
+            <a href="/pset1" style="text-decoration: none;">Problem Set 1</a>
+          </button>
+          <button class="btn btn-lg btn-outline-success me-2" type="button">
+            <a href="/pset2" style="text-decoration: none;">Problem Set 2</a>
+          </button>
+          <button class="btn btn-lg btn-outline-success me-2" type="button">
+            <a href="/pset3" style="text-decoration: none;">Problem Set 3</a>
+          </button>
         </form>
       </div>
     </nav>
-    <div class="container">
-    </div>
+    <div class="container"></div>
     <script src="index.js"></script>
   </body>
 </html>
